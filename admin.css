@@ -57,15 +57,13 @@ header h1 {
 
 main {
     padding: 20px;
+    margin: 0px 10%;
 }
 
-/* Flexbox container for displaying boxes in a row */
 .main_box {
     display: flex;
     flex-wrap: wrap;
-    /* wrap boxes to the next line if there is not enough space */
     justify-content: center;
-    /* center boxes horizontally */
     padding: 0px 50px;
 }
 
@@ -77,12 +75,24 @@ i {
     margin-right: 10px;
 }
 
-/* Box styling */
+.heading {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    border-bottom: 1px solid #333;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize;
+}
+
 .box {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 20px;
     padding: 20px;
+    min-width: 200px;
+    min-height: 150px;
     text-align: center;
     max-width: 300px;
 }
@@ -126,6 +136,8 @@ section h2 {
 table {
     border-collapse: collapse;
     width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 thead {
@@ -145,15 +157,18 @@ th {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 .add_item {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.mt-20{
+
+.mt-20 {
     margin-top: 20px;
 }
+
 /* Button styling */
 .add-product {
     display: inline-block;
@@ -198,7 +213,17 @@ tr:nth-child(even) {
     }
 }
 
+form {
+    min-width: 350px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 /* Styling for form labels */
+
 label {
     display: block;
     font-weight: 600;
@@ -229,4 +254,15 @@ label {
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 8px 10px;
+}
+
+footer {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
